@@ -1,3 +1,5 @@
+//  16-11-2022
+
 // console.log("0"==false);
 // console.log(false=="0");
 // console.log(false==0);
@@ -73,4 +75,43 @@
 // console.log(NaN==NaN);
 // console.log(NaN===NaN);
 
+// ------------------------------------------------------------------------------------------
 
+// 17-11-2022
+
+// console.log(10,'s');
+// console.log(10+'s');
+// console.log(10*'s');       //Nan
+// console.log(10/'s');       //Nan
+// console.log(10-'s');       //Nan
+
+
+// 1.undefined   2.null   3.NaN
+
+// console.log(undefined==0);
+// console.log(null==0);
+// console.log(NaN==0);
+
+// console.log(undefined==null);
+// console.log(undefined===null);
+
+// console.log(undefined==NaN);
+
+// console.log(null==NaN);
+
+// ------------------
+// var a=10
+// var a=20
+// console.log(a);
+// console.log(a);
+
+// let a=10
+// console.log(a);
+// let a=20
+// console.log(a);
+
+// let a=10;        
+// {
+//     let a=20;        
+// }
+// console.log(a);          

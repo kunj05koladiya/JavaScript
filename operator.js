@@ -1,3 +1,5 @@
+// 15-11-2022
+
 // console.log(10+20);
 // console.log(10+"20");
 // console.log(10+'20');
@@ -19,7 +21,7 @@
 // console.log(20*5/false);
 // console.log(true*false);
 
-// -----------------------------------------
+// --------------------------------
     // Assignment operator             =
     // Comparision operator            ==
     // Strictly Comparision operator   ===
@@ -37,7 +39,7 @@
 // console.log(0.1+0.3==0.4);
 // console.log(0.4+0.3==0.7);
 
-// ----------------------------------------------------
+// --------------------------------
 
 // console.log(typeof 'skill');
 // console.log(typeof 10);
