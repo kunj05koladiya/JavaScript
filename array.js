@@ -76,7 +76,38 @@
 // console.log(arr_new);
 
 
+// -------------------------------------------------------------------------------------------------------------
+//  21/11/2022
+
+// at
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20]
+// console.log(arr_new.at(6));
+// console.log(arr_new.at(10));
+// console.log(arr_new.at(-1));
+// console.log(arr_new.at(-7));
 
 
+// slice
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20]
+
+// arr_new.slice(2);
+// console.log(arr_new);
+
+// console.log(arr_new.slice(3));
+// console.log(arr_new.slice(2,7));
+// console.log(arr_new.slice(-3,2));    // []
+// console.log(arr_new.slice(-3,-5));   // []
+// console.log(arr_new.slice(-5,-3));
+
+// let arr_new2=arr_new.slice();
+// console.log(arr_new2);
 
 
+// Join
+// console.log(arr_new.join());
+// console.log(arr_new.join(""));
+// console.log(arr_new.join("   "));
+// console.log(arr_new.join("-"));
+// console.log(arr_new.join("*"));
+// console.log(arr_new.join(" ~ "));
+// console.log(typeof arr_new.join());

@@ -1,31 +1,8 @@
-let arr=[2,3,4,5];
-console.log(arr);
-
-function FirstInsert(a) 
+// let n;
+function test(n)
 {
-    arr.unshift(a);
-    console.log(arr);
+    console.log(`inside function.......${n}`);
+    return [];
 }
-FirstInsert(1);
-
-function FirstDelete(a)
-{
-    arr.shift(a);
-    console.log(arr);
-}
-FirstDelete();
-
-function LastInsert(a)
-{
-    arr.push(a);
-    console.log(arr);
-}
-LastInsert(6);
-
-function LastDelete(a)
-{
-    arr.pop(a);
-    console.log(arr);
-}
-LastDelete();
-
+let n=test(10);
+console.log(typeof n);
