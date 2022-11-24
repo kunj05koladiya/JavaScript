@@ -79,3 +79,45 @@
 //     return "Hello_3..";
 // }
 // fun_one(fun_two,fun_three,fun_four);
+
+
+// -----------------------------------------------------------------------------------------------------------------------------
+
+// 24/11/2022
+
+// default parameters
+
+// function fun_one(arg1="hello_1",arg2="hello_2",arg3="hello_3")
+// {
+//     console.log(arg1,arg2,arg3);
+// }
+// fun_one();
+// fun_one("hii..");
+// fun_one("hii..",undefined);
+// fun_one("hii..","hello...","how r u..","welcome");
+// fun_one(undefined,undefined,undefined);
+// fun_one("hii..",null);
+// fun_one(null,null);
+
+// -----------
+
+// function fun_one(arg1,arg2="hello"){
+//     console.log(arg1,arg2);
+// }
+// fun_one();
+// fun_one("hi..","hii..2");
+// fun_one(undefined,undefined);
+// fun_one(null,null);
+
+
+// rest parameter
+
+// function fun_one(arg1,...arg2){
+//     console.log(arg1);
+//     console.log(arg2);
+// }
+// fun_one();
+// fun_one("hello_1")
+// fun_one("hello_1","hello_2")
+// fun_one(undefined,undefined);
+// fun_one(null,null);

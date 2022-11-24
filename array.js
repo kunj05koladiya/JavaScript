@@ -111,3 +111,42 @@
 // console.log(arr_new.join("*"));
 // console.log(arr_new.join(" ~ "));
 // console.log(typeof arr_new.join());
+
+
+
+// -------------------------------------------------------------------------------------------------------------
+
+// 24/11/2022
+
+// let arr1=[10,20,30];
+// let arr2;
+
+// arr2=arr1;
+// console.log(arr2);
+// console.log(arr1==arr2);
+// console.log(arr1===arr2);   // copy array
+
+// let arr1=[10,20,30];
+// let arr2;
+
+// arr2=arr1.slice();
+// console.log(arr2);
+// console.log(arr1==arr2);    // copy array using slice
+
+let arr1=[10,20,30];
+let arr2=[1,2,3];
+let copy_array;
+
+// copy_array=[...arr1,arr2];       // "spread operator" --> "..."  --> 3 dot
+// copy_array=[...arr1,...arr2];    
+// copy_array=[arr1,...arr2];
+// copy_array=[arr1,arr2];
+
+copy_array=arr1;
+// copy_array=arr1.slice();
+arr1.push(40);
+copy_array.push(50);
+
+console.log(arr1);
+console.log(copy_array);
+console.log(arr1==copy_array);
