@@ -71,6 +71,6 @@ let total = (number, callback) => {
         return sum(n)
 }
 
-let number = 9898989898;
+let number = 98111111111;
 console.log(total(number, sum));
 
