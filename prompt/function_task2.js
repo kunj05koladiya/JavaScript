@@ -229,3 +229,72 @@
 
 
 // ------------ * --------------
+
+// 7. Write a js function that accepts a num as a parameter & check the num is prime or Not.
+
+// const prompt=require("prompt-sync")();
+
+// const number = parseInt(prompt("Enter a number: "));
+
+// let isPrime = true;
+// if (number === 1)   
+// {
+//     console.log("1 is neither prime nor composite number.");
+// }
+
+// else if (number > 1) {
+
+//     for (let i = 2; i < number; i++) 
+//     {
+//         if (number % i == 0) 
+//         {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+
+//     if (isPrime) 
+//     {
+//         console.log(`${number} is a prime number`);
+//     } 
+//     else 
+//     {
+//         console.log(`${number} is a not prime number`);
+//     }
+// }
+// else        // check if number is less than 1 
+// {
+//     console.log("The number is not a prime number.");
+// }
+
+// ------------ * --------------
+
+// 8. Write a js function which will taken an array of numbers stored and find the second lowest & second greatest numbers,respectively.
+
+
+const prompt=require("prompt-sync")();
+
+const arr_num = parseInt(prompt("Enter a number: "));
+
+function Second_Greatest_Lowest(arr_num)
+{
+    arr_num.sort(function(x,y)
+    {
+        return x-y;
+    });
+    var uniqa = [arr_num[0]];
+    var result = [];
+  
+  for(var j=1; j < arr_num.length; j++)
+  {
+    if(arr_num[j-1] !== arr_num[j])
+    {
+      uniqa.push(arr_num[j]);
+    }
+  }
+    result.push(uniqa[1],uniqa[uniqa.length-2]);
+  return result.join(',');
+  }
+
+console.log(Second_Greatest_Lowest([arr_num]));
+

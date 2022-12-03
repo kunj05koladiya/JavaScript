@@ -114,30 +114,78 @@
 
 // using Promise
 
-let sum = (number1) => {
-    while (number1 > 9) {
-        console.log(number1);
-        let sum1 = 0;
-        while (number1 != 0) {
-            sum1 = sum1 + number1 % 10;
-            number1 = parseInt(number1 / 10);
-        }
-        number1 = sum1;
+// let sum = (number1) => {
+//     while (number1 > 9) {
+//         console.log(number1);
+//         let sum1 = 0;
+//         while (number1 != 0) {
+//             sum1 = sum1 + number1 % 10;
+//             number1 = parseInt(number1 / 10);
+//         }
+//         number1 = sum1;
+//     }
+//     return number1;
+// }
+// let total = (number, work) => {
+
+//     return new Promise((resolve, reject) => {
+
+//         if (number >= 0) {
+//             resolve(console.log(work(number)));
+//         }
+//         else {
+//             reject(console.log(number));
+//         }
+//     })
+// }
+
+// let number = 98988828288;
+// total(number,sum);
+
+
+// --------------------------------- * -----------------------------------------
+
+// 03-12-2022
+
+// Example of call back,promise...
+
+function add(num,callback)
+{
+    return callback(num+10,true);
+}
+function sub(num,callback)
+{
+    return callback(num-5,true);
+}
+function mul(num,callback)
+{
+    return callback(num*2,true);
+}
+function div(num,callback){
+    return callback(num/2,true);
+}
+
+add(10,(addres,error)=>{
+    if(error)
+    {
+        console.log(addres);        // 10 + 10 = 20
+        sub(addres,(subres,error)=>{
+            if(error)
+            {
+                console.log(subres);        //20 - 5 = 15
+                mul(subres,(mulres,error)=>{
+                    if(error)
+                    {
+                        console.log(mulres);        //15 * 2 = 30
+                        div(mulres,(divres,error)=>{
+                            if(error)
+                            {
+                                console.log(divres);        //30 / 2 = 15
+                            }
+                        })
+                    }
+                })
+            }
+        })
     }
-    return number1;
-}
-let total = (number, work) => {
-
-    return new Promise((resolve, reject) => {
-
-        if (number >= 0) {
-            resolve(console.log(work(number)));
-        }
-        else {
-            reject(console.log(number));
-        }
-    })
-}
-
-let number = 98988828288;
-total(number,sum);
+})
