@@ -272,29 +272,23 @@
 // 8. Write a js function which will taken an array of numbers stored and find the second lowest & second greatest numbers,respectively.
 
 
-const prompt=require("prompt-sync")();
+// function findSecondGreatest(arr){
 
-const arr_num = parseInt(prompt("Enter a number: "));
+//   let Greatest=0, secondGreatest = 0
 
-function Second_Greatest_Lowest(arr_num)
-{
-    arr_num.sort(function(x,y)
-    {
-        return x-y;
-    });
-    var uniqa = [arr_num[0]];
-    var result = [];
-  
-  for(var j=1; j < arr_num.length; j++)
-  {
-    if(arr_num[j-1] !== arr_num[j])
-    {
-      uniqa.push(arr_num[j]);
-    }
-  }
-    result.push(uniqa[1],uniqa[uniqa.length-2]);
-  return result.join(',');
-  }
+//   for (i of arr){
+//       if (i > Greatest){
+//           Greatest = i
+//       }
+//   }
 
-console.log(Second_Greatest_Lowest([arr_num]));
+//   for (j of arr){
+//       if(j>secondGreatest && j<Greatest){
+//           secondGreatest =   j
+//       }
+//   }
 
+//   return secondGreatest;
+
+// }
+// console.log("Second Largest",findSecondGreatest([1,2,3,4,5]))
